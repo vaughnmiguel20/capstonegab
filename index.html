@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>E-Barangay Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images\seal.jpg" alt="Barangay Seal">
+      <span>Barangay UCAB</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#officials">Officials</a></li>
+      <li><a href="#news">News & Announcements</a></li>
+      <li><a href="#">Barangay Map</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#register" class="register">Register</a></li>
+      <li><a href="#login" class="login">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+
+  <!-- VIDEO BACKGROUND -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="images\Ucab, Itogon - DJI MINI 4 Pro Cinematic 4k _ A New Frontier.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- BLUE OVERLAY -->
+  <div class="overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1>E-Barangay Portal</h1>
+    <p>
+      A Barangay Portal System is an online platform designed to optimize
+      the services and transactions within local barangay.
+    </p>
+    <button class="btn">About Us</button>
+  </div>
+
+  <!-- LOGO -->
+  <div class="hero-logo">
+    <img src="images\seal.jpg" alt="Barangay Seal">
+  </div>
+
+</section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="card" onclick="openService('services')">
+      <h3>📘 E-Services</h3>
+    </div>
+
+    <div class="card" onclick="openService('officials')">
+      <h3>👥 Barangay Officials</h3>
+    </div>
+
+    <div class="card" onclick="openService('news')">
+      <h3>📢 All News & Announcements</h3>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+<section class="about-us" id="about">
+  <h2>About Us</h2>
+  <div class="underline"></div>
+  <p class="subtitle">
+    Welcome to the E-Barangay Portal a modern solution built to bring essential barangay services right to your fingertips.
+  </p>
+
+  <div class="about-content">
+    
+    <!-- LEFT -->
+    <div class="about-left">
+      <h3>
+        Our mission is to empower our community by delivering fast and reliable
+        barangay services through digital innovation.
+      </h3>
+
+      <img src="images/community.jpg" alt="Community Image">
+
+      <p>
+        For years, we have served our community with dedication and commitment.
+        We strive to provide excellent service to every resident. Our team is
+        composed of passionate individuals who work tirelessly to ensure that
+        the needs of the community are met.
+      </p>
+
+      <p>
+        We are proud to introduce the E-Barangay Portal, a digital platform
+        designed to make barangay services more accessible and efficient.
+        Together, we aim to build a stronger, more connected community through
+        innovation and transparency.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="about-right">
+      <h4>E-Barangay Portal Account<br>Registration Guide</h4>
+
+      <ul class="steps">
+        <li>Click on the <b>Register</b> button located in the top-right corner of the homepage.</li>
+        <li>Complete the resident account creation form and submit it for verification.</li>
+        <li>Once verified, you will receive a confirmation email and may log in.</li>
+      </ul>
+
+      <div class="video-box">
+  <video controls poster="images/video-preview.jpg">
+    <source src="images\YTDown.com_YouTube_reaching-out-Ucab-Itogon-Benguet-2018_Media_KY8gZCD0Ouo_001_1080p.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+
+  <h2>Our Services</h2>
+  <div class="underline"></div>
+  <p class="services-subtitle">
+    Efficient Document Processing: Quick and reliable issuance of barangay
+    documents and certifications.
+  </p>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="icon">📘</div>
+      <h3>Barangay Clearance</h3>
+      <p>
+        Proof that a person has no bad record in the barangay, often needed for
+        job or permit applications.
+      </p>
+      <button>Request now →</button>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🏠</div>
+      <h3>Barangay Residency</h3>
+      <p>
+        Confirms that a person is a resident of the barangay.
+      </p>
+      <button>Request now →</button>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">👤</div>
+      <h3>Barangay Indigency</h3>
+      <p>
+        Issued to low-income individuals for aid, scholarships, or medical help.
+      </p>
+      <button>Request now →</button>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">💼</div>
+      <h3>Barangay Business Clearance</h3>
+      <p>
+        Permission for a business to operate within the barangay.
+      </p>
+      <button>Request now →</button>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🚩</div>
+      <h3>Blotters Report</h3>
+      <p>
+        Record of complaints or incidents filed at the barangay.
+      </p>
+      <button>Request now →</button>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🏥</div>
+      <h3>Vaccination</h3>
+      <p>
+        Schedule a vaccination for your child. Fast and easy appointment
+        request.
+      </p>
+      <button>Schedule now →</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- BARANGAY OFFICIALS -->
+<section class="officials" id="officials">
+
+  <h2>Barangay Officials</h2>
+  <div class="underline"></div>
+  <p class="subtitle">Our newly elected officials 2025 of Barangay Agujo.</p>
+
+  <div class="carousel">
+    <button class="nav prev" onclick="prevSlide()">‹</button>
+
+    <div class="carousel-track">
+      <div class="official-card">
+        <img src="images/official1.jpg" />
+        <h4>Kimberly Conde</h4>
+        <span>Barangay Kagawad 2</span>
+        <p>THIS IS A TEST!!</p>
+      </div>
+
+      <div class="official-card">
+        <img src="images/official2.jpg" />
+        <h4>Bryle Maquilan</h4>
+        <span>Barangay Kagawad 3</span>
+        <p>THIS IS A TEST!!</p>
+      </div>
+
+      <div class="official-card">
+        <img src="images/official3.jpg" />
+        <h4>Stephanie Tumabini</h4>
+        <span>Barangay Kagawad 4</span>
+        <p>THIS IS A TEST!!</p>
+      </div>
+    </div>
+
+    <button class="nav next" onclick="nextSlide()">›</button>
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news" id="news">
+
+  <h2>Recent News & Announcements</h2>
+  <div class="underline"></div>
+  <p class="subtitle">
+    Keep up to date with the latest news and announcements from our barangay.
+  </p>
+</section>
+
+<!-- NEWS CARDS -->
+<section class="news-cards">
+  <div class="news-grid">
+
+    <div class="news-card">
+      <img src="images/news1.jpg" alt="AI News">
+      <div class="news-content">
+        <span class="tag">AI</span>
+        <h3>IMPLEMENTING AI</h3>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="images/news2.jpg" alt="Nutrition Month">
+      <div class="news-content">
+        <span class="tag feeding">FEEDING</span>
+        <h3>NUTRITION MONTH</h3>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="images/news3.png" alt="Meeting of Honor">
+      <div class="news-content">
+        <span class="tag politics">POLITICS</span>
+        <h3>MEETING OF HONOR</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REGISTER SECTION -->
+<section class="register-section" id="register">
+  <h2>CREATE RESIDENT ACCOUNT</h2>
+  <p class="note">
+    Note: Your account will require admin approval before you can log in.
+  </p>
+
+  <form class="register-form">
+
+    <!-- ROW 1 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Middle Name</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Birthdate</label>
+        <input type="date">
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number">
+      </div>
+      <div class="form-group">
+        <label>Place of Birth</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <select>
+          <option>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Civil Status</label>
+        <select>
+          <option>Civil Status</option>
+          <option>Single</option>
+          <option>Married</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ROW 3 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nationality</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Religion</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Complete Address</label>
+        <select>
+          <option>Select your address</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Purok</label>
+        <select>
+          <option>Select Purok</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ROW 4 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Years of Residency</label>
+        <input type="number">
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="text" placeholder="09xxx">
+      </div>
+      <div class="form-group">
+        <label>Email / Verified Email</label>
+        <input type="email">
+      </div>
+      <div class="form-group">
+        <label>Voter Status</label>
+        <select>
+          <option>Voter Status</option>
+          <option>Registered</option>
+          <option>Not Registered</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ROW 5 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Employment Status</label>
+        <select>
+          <option>Employment Status</option>
+          <option>Employed</option>
+          <option>Unemployed</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Occupation</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Household Head?</label>
+        <select>
+          <option>Household Head?</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Emergency Contact Person</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- ROW 6 -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Number of Family Members</label>
+        <input type="number">
+      </div>
+      <div class="form-group">
+        <label>Educational Attainment</label>
+        <select>
+          <option>Select Educational Attainment</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Blood Type</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Disability / Special Needs</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- FILES -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Attach Valid ID *</label>
+        <input type="file">
+      </div>
+      <div class="form-group">
+        <label>Profile Image</label>
+        <input type="file">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password">
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password">
+      </div>
+    </div>
+
+    <div class="terms">
+      <input type="checkbox"> I agree to the <a href="#">Terms and Conditions</a>
+    </div>
+
+    <button class="submit-btn">Create Account</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="images\seal.jpg" alt="Barangay Ucab">
+        <h3>Barangay Ucab</h3>
+      </div>
+
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+      <h4>Useful Links</h4>
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Services</a>
+      <a href="#">Officials</a>
+      <a href="#">News & Announcements</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-links">
+      <h4>Our Services</h4>
+      <a href="#">E-Barangay Services</a>
+      <a href="#">Barangay Ucab</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>
+        
+        Baranggay UCAB<br>
+        Itogon Benguet, Philippines
+      </p>
+      <p><b>Phone:</b> +63912345678</p>
+      <p><b>Email:</b> barangayucab@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © Copyright E-Barangay Portal | All Rights Reserved<br>
+    Modified by: Gabrielle Bonavente, Zarah Godio
+  </div>
+
+  <a href="#" class="scroll-top">↑</a>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
