@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Barangay Indigency</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    localStorage.setItem("redirectAfterLogin", window.location.pathname);
+    window.location.href = "login.html";
+  }
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images\seal.jpg" alt="Barangay Seal">
+    <span>Barangay Ucab</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- INDIGENCY SECTION -->
+<section class="indigency-section">
+
+  <!-- ABOUT -->
+  <div class="indigency-about">
+    <h2>Barangay Certificate of Indigency</h2>
+    <p>
+      A Barangay Certificate of Indigency is issued to residents who are
+      financially challenged. This document is commonly required for
+      medical assistance, scholarships, burial assistance, and other
+      government or private aid programs.
+    </p>
+  </div>
+
+  <!-- FORM -->
+  <form class="indigency-form">
+
+    <label>Name / Pangalan *</label>
+    <div class="row">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Middle Name">
+      <input type="text" placeholder="Surname / Apelyido">
+    </div>
+
+    <label>Address / Tirahan</label>
+    <input type="text" placeholder="No. of House / Street / Subdivision">
+
+    <label>Years of Residency / Taon nang Paninirahan</label>
+    <input type="number" placeholder="3">
+
+    <label>Purpose of Request</label>
+    <select>
+      <option>Medical Assistance</option>
+      <option>Scholarship</option>
+      <option>Burial Assistance</option>
+      <option>Financial Aid</option>
+      <option>Other</option>
+    </select>
+
+    <label>Name of Patient / Student / Beneficiary</label>
+    <input type="text" placeholder="Juan R. Santos">
+
+    <label>Relationship to Beneficiary</label>
+    <input type="text" placeholder="Mother / Father / Guardian">
+
+    <label>Contact Number / Numero ng Telepono</label>
+    <input type="text" placeholder="0900-000-000">
+
+    <label>Delivery Method</label>
+    <div class="checkbox">
+      <input type="checkbox"> PICK UP (Claim within 24 hours, 8am–5pm)
+    </div>
+    <div class="checkbox">
+      <input type="checkbox"> DELIVER (₱50 delivery fee)
+    </div>
+
+    <button type="submit">Submit Request</button>
+
+  </form>
+</section>
+
+</body>
+</html>

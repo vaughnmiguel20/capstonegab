@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barangay Vaccination Schedule</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    localStorage.setItem("redirectAfterLogin", window.location.pathname);
+    window.location.href = "login.html";
+  }
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images\seal.jpg" alt="Barangay Seal">
+    <span>Barangay Ucab</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- VACCINATION SECTION -->
+<section class="vaccination-section">
+
+  <!-- ABOUT -->
+  <div class="vaccination-about">
+    <h2>Barangay Vaccination Program</h2>
+    <p>
+      The Barangay Vaccination Program aims to provide accessible and safe
+      immunization services for children, adults, and senior citizens.
+      Residents may schedule their vaccination appointment online to avoid
+      long queues and ensure proper coordination.
+    </p>
+  </div>
+
+  <!-- FORM -->
+  <form class="vaccination-form">
+
+    <label>Patient Name *</label>
+    <div class="row">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Middle Name">
+      <input type="text" placeholder="Surname" required>
+    </div>
+
+    <label>Date of Birth</label>
+    <input type="date">
+
+    <label>Age</label>
+    <input type="number" placeholder="0">
+
+    <label>Address</label>
+    <input type="text" placeholder="House No. / Street / Subdivision">
+
+    <label>Contact Number *</label>
+    <input type="text" placeholder="0900-000-000" required>
+
+    <label>Type of Vaccination</label>
+    <select>
+      <option>Child Immunization</option>
+      <option>COVID-19 Vaccine</option>
+      <option>Flu Vaccine</option>
+      <option>Anti-Rabies</option>
+      <option>Other</option>
+    </select>
+
+    <label>Preferred Vaccination Date</label>
+    <input type="date">
+
+    <label>Health Conditions (if any)</label>
+    <textarea rows="3" placeholder="Asthma, allergy, etc."></textarea>
+
+    <label>Consent</label>
+    <div class="checkbox">
+      <input type="checkbox" required>
+      I confirm that the information provided is true and I consent to receive
+      vaccination services.
+    </div>
+
+    <button type="submit">Schedule Appointment</button>
+
+  </form>
+</section>
+
+</body>
+</html>

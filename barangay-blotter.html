@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barangay Blotter Report</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    localStorage.setItem("redirectAfterLogin", window.location.pathname);
+    window.location.href = "login.html";
+  }
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images\seal.jpg" alt="Barangay Seal">
+    <span>Barangay Ucab</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- BLOTTER SECTION -->
+<section class="blotter-section">
+
+  <!-- ABOUT -->
+  <div class="blotter-about">
+    <h2>Barangay Blotter Report</h2>
+    <p>
+      A Barangay Blotter Report is an official record of incidents, complaints,
+      disputes, or violations reported within the barangay. This document is
+      used for legal reference, mediation, and community safety monitoring.
+    </p>
+  </div>
+
+  <!-- FORM -->
+  <form class="blotter-form">
+
+    <label>Complainant Name *</label>
+    <div class="row">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Middle Name">
+      <input type="text" placeholder="Surname / Apelyido" required>
+    </div>
+
+    <label>Complainant Address</label>
+    <input type="text" placeholder="No. of House / Street / Subdivision">
+
+    <label>Contact Number</label>
+    <input type="text" placeholder="0900-000-000">
+
+    <label>Respondent Name (If any)</label>
+    <input type="text" placeholder="Full Name">
+
+    <label>Date of Incident</label>
+    <input type="date">
+
+    <label>Time of Incident</label>
+    <input type="time">
+
+    <label>Place of Incident</label>
+    <input type="text">
+
+    <label>Type of Incident</label>
+    <select>
+      <option>Dispute</option>
+      <option>Harassment</option>
+      <option>Physical Injury</option>
+      <option>Theft</option>
+      <option>Other</option>
+    </select>
+
+    <label>Incident Description</label>
+    <textarea rows="4" placeholder="Describe what happened..."></textarea>
+
+    <label>Preferred Action</label>
+    <select>
+      <option>Mediation</option>
+      <option>Documentation Only</option>
+      <option>Legal Referral</option>
+    </select>
+
+    <button type="submit">Submit Blotter Report</button>
+
+  </form>
+</section>
+
+</body>
+</html>

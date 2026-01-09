@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Barangay Clearance</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    localStorage.setItem("redirectAfterLogin", window.location.pathname);
+    window.location.href = "login.html";
+  }
+</script>
+</head>
+<body>
+
+<!-- NAVBAR (same as main site) -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images\seal.jpg" alt="Barangay Seal">
+    <span>Barangay Ucab</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- CLEARANCE FORM -->
+<section class="clearance-section">
+  <h2>Barangay Clearance Request</h2>
+
+  <form class="clearance-form">
+
+    <label>Name / Pangalan *</label>
+    <div class="row">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Middle Name">
+      <input type="text" placeholder="Surname / Apelyido">
+    </div>
+
+    <label>Address / Tirahan</label>
+    <input type="text" placeholder="No. of House / Street / Subd Village">
+
+    <label>Years of Stay / Taon nang Pananatili</label>
+    <input type="number" placeholder="10">
+
+    <label>Purpose</label>
+    <input type="text">
+
+    <label>Name of Student / Patient</label>
+    <input type="text" placeholder="Juan R. Santos">
+
+    <label>Address / Tirahan</label>
+    <input type="text" placeholder="No. of House / Street / Subd Village">
+
+    <label>Contact Number / Numero ng Telepono</label>
+    <input type="text" placeholder="0900-000-000">
+
+    <label>Relationship</label>
+    <input type="text" placeholder="Mother">
+
+    <label>Shipping Method</label>
+    <div class="checkbox">
+      <input type="checkbox"> PICK UP (Claim within 24 hours, 8am–5pm)
+    </div>
+    <div class="checkbox">
+      <input type="checkbox"> DELIVER (₱50 delivery fee)
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Barangay Clearance</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    localStorage.setItem("redirectAfterLogin", window.location.pathname);
+    window.location.href = "login.html";
+  }
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images\seal.jpg" alt="Barangay Seal">
+    <span>Barangay Ucab</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- CLEARANCE SECTION -->
+<section class="clearance-section">
+
+  <!-- ABOUT -->
+  <div class="clearance-about">
+    <h2>Barangay Clearance</h2>
+    <p>
+      A Barangay Clearance is an official document issued by the barangay
+      certifying that the applicant has no derogatory record and is a
+      resident in good standing. This document is commonly required for
+      employment, permits, school requirements, and other legal purposes.
+    </p>
+  </div>
+
+  <!-- FORM -->
+  <form class="clearance-form">
+
+    <label>Name / Pangalan *</label>
+    <div class="row">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Middle Name">
+      <input type="text" placeholder="Surname / Apelyido" required>
+    </div>
+
+    <label>Address / Tirahan</label>
+    <input type="text" placeholder="No. of House / Street / Subdivision">
+
+    <label>Years of Stay / Taon nang Pananatili</label>
+    <input type="number" placeholder="10">
+
+    <label>Purpose of Request</label>
+    <select>
+      <option>Employment</option>
+      <option>School Requirement</option>
+      <option>Business Permit</option>
+      <option>Police / NBI Clearance</option>
+      <option>Other</option>
+    </select>
+
+    <label>Contact Number / Numero ng Telepono</label>
+    <input type="text" placeholder="0900-000-000">
+
+    <label>Delivery Method</label>
+    <div class="checkbox">
+      <input type="checkbox"> PICK UP (Claim within 24 hours, 8am–5pm)
+    </div>
+    <div class="checkbox">
+      <input type="checkbox"> DELIVER (₱50 delivery fee)
+    </div>
+
+    <button type="submit">Submit Request</button>
+
+  </form>
+</section>
+
+</body>
+</html>
