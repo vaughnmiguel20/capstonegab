@@ -54,3 +54,21 @@ function openYoutube() {
     "_blank"
   );
 }
+
+<script>
+function loginUser(e) {
+  e.preventDefault();
+
+  // simulate successful login
+  localStorage.setItem("isLoggedIn", "true");
+
+  // redirect back to requested page if exists
+  const redirect = localStorage.getItem("redirectAfterLogin");
+  if (redirect) {
+    localStorage.removeItem("redirectAfterLogin");
+    window.location.href = redirect;
+  } else {
+    window.location.href = "index.html";
+  }
+}
+</script>
